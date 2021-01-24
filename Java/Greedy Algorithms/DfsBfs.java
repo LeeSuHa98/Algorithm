@@ -13,21 +13,22 @@ public class DfsBfs {
     static StringBuilder sb = new StringBuilder();
 
     public static void main(String[] args) throws Exception{
-        StringTokenizer st = new StringTokenizer(br.readLine());
+        StringTokenizer stringTokenizer = new StringTokenizer(br.readLine());
 
         // 정점의 개수
-        int N = Integer.parseInt(st.nextToken());
+        int N = Integer.parseInt(stringTokenizer.nextToken());
         // 간선의 개수
-        int M = Integer.parseInt(st.nextToken());
+        int M = Integer.parseInt(stringTokenizer.nextToken());
         // 첫 정점의 번호
-        int V = Integer.parseInt(st.nextToken());
+        int V = Integer.parseInt(stringTokenizer.nextToken());
 
         check = new int[N + 1][N + 1];
+        
         // 정점들간의 연결
         for (int i = 1; i < M+1; i++) {
-            st= new StringTokenizer(br.readLine());
-            int a = Integer.parseInt(st.nextToken());
-            int b = Integer.parseInt(st.nextToken());
+            stringTokenizer = new StringTokenizer(br.readLine());
+            int a = Integer.parseInt(stringTokenizer.nextToken());
+            int b = Integer.parseInt(stringTokenizer.nextToken());
 
             check[a][b] = 1;
             check[b][a] = 1;
@@ -42,6 +43,8 @@ public class DfsBfs {
         bfs(V);
 
         System.out.println(sb);
+
+        br.close();
     }
 
     public static void dfs(int vertex) {

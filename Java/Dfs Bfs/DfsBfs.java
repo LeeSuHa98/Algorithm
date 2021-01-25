@@ -23,7 +23,7 @@ public class DfsBfs {
         int V = Integer.parseInt(stringTokenizer.nextToken());
 
         check = new int[N + 1][N + 1];
-        
+
         // 정점들간의 연결
         for (int i = 1; i < M+1; i++) {
             stringTokenizer = new StringTokenizer(br.readLine());

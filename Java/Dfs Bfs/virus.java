@@ -1,10 +1,7 @@
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
-import java.util.StringTokenizer;
 
 public class virus {
     public static boolean[] visit;
@@ -36,6 +33,7 @@ public class virus {
 
         System.out.println(count);
 
+        sc.close();
     }
     public static void bfs(int vertex){
         Queue<Integer> que = new LinkedList<Integer>();

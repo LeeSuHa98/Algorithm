@@ -62,7 +62,7 @@ public class DfsBfs {
     }
 
     public static void bfs(int vertex){
-        Queue que = new LinkedList<Integer>();
+        Queue<Integer> que = new LinkedList<Integer>();
 
         que.add(vertex);
         visit[vertex] = true;

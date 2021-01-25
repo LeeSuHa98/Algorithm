@@ -20,7 +20,7 @@ public class ApartmentNumbering {
     static boolean visit[][] = new boolean[25][25];
 
     //총 단지 수
-    static ArrayList array = new ArrayList<>();
+    static ArrayList<Integer> array = new ArrayList<Integer>();
 
     public static void main(String[] args) throws IOException {
         StringTokenizer st = new StringTokenizer(br.readLine());

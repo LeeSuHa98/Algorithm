@@ -7,7 +7,6 @@ import java.util.StringTokenizer;
 
 public class Mirror {
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    static StringBuilder sb = new StringBuilder();
 
     public static int row;
     public static int col;

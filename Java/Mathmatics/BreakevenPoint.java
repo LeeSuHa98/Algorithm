@@ -5,7 +5,6 @@ public class BreakevenPoint {
         Scanner sc = new Scanner(System.in);
 
         int A, B, C = 0;
-        int count = 0;
 
         A = sc.nextInt();
         B = sc.nextInt();

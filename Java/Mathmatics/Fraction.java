@@ -5,7 +5,8 @@ public class Fraction {
         Scanner sc = new Scanner(System.in);
 
         int N = sc.nextInt();
-
+        sc.close();
+        
         int count = 1;
         int layer = 2;
 

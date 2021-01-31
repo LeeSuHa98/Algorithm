@@ -6,37 +6,24 @@ import java.util.StringTokenizer;
 public class ACMHotel {
     public static void main(String[] args) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st = new StringTokenizer(br.readLine());
+        StringBuilder sb = new StringBuilder();
         
-        int T = Integer.parseInt(st.nextToken());
-
-        int[] arr = new int[T];
- 
+        int T = Integer.parseInt(br.readLine());
+        
         for(int a = 0; a < T; a++){
-            st = new StringTokenizer(br.readLine());
+            StringTokenizer st = new StringTokenizer(br.readLine());
 
             int H = Integer.parseInt(st.nextToken());
 		    int W = Integer.parseInt(st.nextToken());
             int N = Integer.parseInt(st.nextToken());
 
-            int count = 0;
-
-            for(int i = 1; i <= W; i++){
-                for(int j = 1; j <= H; j++){
-                    count++;
-                    if(count == N){
-                        int index = j*100 + i;
-                        arr[a] = index;
-                       
-                        break;
-                    }
-                }
+            if(N % H == 0){
+                sb.append((H * 100) + (N / H)).append("\n");
+            }
+            else{
+                sb.append(((N % H) * 100) + (N / H + 1)).append("\n");
             }
         }
-
-        for(int i = 0; i < T; i++){
-            System.err.println(arr[i]);
-        }
-        
-    }
+        System.out.println(sb);
+    }   
 }

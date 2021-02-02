@@ -14,7 +14,7 @@ public class ACMHotel {
             StringTokenizer st = new StringTokenizer(br.readLine());
 
             int H = Integer.parseInt(st.nextToken());
-		    int W = Integer.parseInt(st.nextToken());
+		    //int W = Integer.parseInt(st.nextToken());
             int N = Integer.parseInt(st.nextToken());
 
             if(N % H == 0){

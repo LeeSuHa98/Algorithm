@@ -1,4 +1,3 @@
-import java.io.*;
 import java.math.BigInteger;
 import java.util.*;
 
@@ -9,6 +8,7 @@ public class Sum {
         BigInteger a = sc.nextBigInteger();
         BigInteger b = sc.nextBigInteger();
 
+        sc.close();
         System.out.println(a.add(b));
     }
 }

@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
 public class ApartmentNumbering {
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     static StringBuilder sb = new StringBuilder();
-
+    
     static int N;
     //단지 내 집의 수
     static int number;

@@ -10,26 +10,23 @@ result = []
 
 for i in range(N-7):
     for j in range(M-7):
-        firstW = 0;
-        firstB = 0;
+        changeW = 0;
+        changeB = 0;
         for a in range(i, i+8):
             for b in range(j, j+8):
                 if((a+b) % 2 == 0):
                     #짝수일 때 
                     if(chess[a][b] != "W"):
-                        firstW += 1
+                        changeW += 1
                     if(chess[a][b] != "B"):
-                        firstB += 1
+                        changeB += 1
                 else:
                     #홀수일 때
                     if(chess[a][b] != "B"):
-                        firstW += 1
+                        changeW += 1
                     if(chess[a][b] != "W"):
-                        firstB += 1
-
-            print(a, "+", firstW)
-            print(a, "+",firstB)
-        result.append(firstW)
-        result.append(firstB)
+                        changeB += 1
+        result.append(changeW)
+        result.append(changeB)
 
 print(min(result))

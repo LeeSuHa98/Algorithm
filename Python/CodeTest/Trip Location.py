@@ -9,6 +9,7 @@ dy = [-1, 1, 0, 0]
 
 move_type = ['L', 'R', 'U', 'D']
 
+
 for step in trip:
     for i in range(len(move_type)):
         if step == move_type[i]:

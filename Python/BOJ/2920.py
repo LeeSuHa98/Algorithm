@@ -1,7 +1,7 @@
 # solve 1
 # sort code and effective
 
-N = input().split(" ")
+N = input().split()
 result = []
 for i in range(1, 8):
     check = int(N[i]) - int((N[i-1]))

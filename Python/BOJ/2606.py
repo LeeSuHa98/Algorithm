@@ -18,9 +18,7 @@ gragh = [[]*N for i in range(N+1)]
 for i in range(network):
     a, b = map(int, input().split())
     gragh[a].append(b)
-    print(a, "====", gragh)
     gragh[b].append(a)
-    print(b, "====", gragh)
     
 count = 0
 visited = [False]*(N+1)

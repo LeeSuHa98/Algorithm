@@ -73,6 +73,8 @@ for i in range(N):
             bfsFindIsland(i, j)
             count += 1
 
+print(count)
+
 for i in range(1, count):
     bfsFindBridge(i)
 

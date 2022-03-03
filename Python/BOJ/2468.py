@@ -19,7 +19,7 @@ N = int(sys.stdin.readline())
 
 graph = [list(map(int, sys.stdin.readline().split())) for i in range(N)]
 
-#count 배열에 담아서 max(count) 구해야함
+#count - max(count) 구해야함
 result = 0
 for k in range(max(map(max, graph))):
     visited = [[False]*N for i in range(N)]

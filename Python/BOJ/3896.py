@@ -1,6 +1,3 @@
-import sys
-
-# 합성수 인지 ( 소수가 아닌지 체크 )
 MAX = 13000001
 prime = []
 a = [0] * (MAX)
@@ -14,7 +11,6 @@ def findPrime():
             for j in range(2 * i, MAX - 1, i):
                a[j] = 1    
 
-    # return prime, a
 def binarySearch(n):
     l = 2
     r = len(prime) - 1

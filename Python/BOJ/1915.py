@@ -15,5 +15,5 @@ for i in range(1, N+1):
             dp[i][j] = min(dp[i][j-1], dp[i-1][j], dp[i-1][j-1]) +1
             
             count = max(dp[i][j], count)
-print(dp)                
+                         
 print(count ** 2)

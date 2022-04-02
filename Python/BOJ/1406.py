@@ -20,3 +20,6 @@ for i in range(M):
 
 N.extend(reversed(stack))
 print(''.join(N))
+
+# memo 
+# extend 및 append 는 반환값이 없으므로 재정의 불가

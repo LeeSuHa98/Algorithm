@@ -23,4 +23,5 @@ def twopointer(arr):
 
 N = int(input())
 
-print([twopointer(input().strip()) for i in range(N)])
+for i in range(N):
+    print(twopointer(input().strip()))

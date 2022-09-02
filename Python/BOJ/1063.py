@@ -27,7 +27,7 @@ chess[8-int(rock[1])][ord(rock[0])-65] = 1
 
 location = [[8-int(king[1]), ord(king[0])-65]]
 rock_location = [[8-int(rock[1]), ord(rock[0])-65]]
-print(chess)
+
 for i in range(N):
     command = input().rstrip()
     
@@ -59,5 +59,3 @@ rock = [chr(rock_location[0][1]+65), 8 - rock_location[0][0]]
 
 print(''.join(map(str, king)))
 print(''.join(map(str, rock)))
-
-print(chess)
